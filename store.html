@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shop</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<h3 style="font-size: 100px;">COSTUMES</h3>
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Cossie Play Shop ⤵ </a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			<li><a href="announcements.html">Announcements</a></li>
+				<li><a href="store.html">Shop</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>	
+		</div>
+<body background="shop.jpeg">
+<style>	 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>COSTUMES</th>
+    <th>SIZE</th>
+    <th>PRICE</th>
+  </tr>
+  <tr>
+    <td>Spiderman</td>
+    <td>12</td>
+    <td>$49</td>
+  </tr>
+  <tr>
+    <td>Elf</td>
+    <td>16</td>
+    <td>$35</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Darth Vader</td>
+    <td>M</td>
+    <td>$149</td>
+  </tr>
+  <tr>
+    <td>Iron Man (with rocket boots)</td>
+    <td>M</td>
+    <td>$2,500</td>
+  </tr>
+  <tr>
+    <td>Bayonetta</td>
+    <td>8</td>
+    <td>$300</td>
+  </tr>
+   <tr>
+    <td>Diablo III – Demon Hunter</td>
+    <td>10</td>
+    <td>$250</td>
+  </tr>
+    <tr>
+    <td>Harley Quinn</td>
+    <td>18</td>
+    <td>$125</td>
+  </tr>
+     <tr>
+    <td>Metroid – Samus Aran</td>
+    <td>L</td>
+    <td>$850</td>
+  </tr>
+      <tr>
+    <td>Peter Pan</td>
+    <td>XS</td>
+    <td>$49</td>
+  </tr>
+      <tr>
+    <td>Princess Leia (White)</td>
+    <td>10</td>
+    <td>$100</td>
+  </tr>
+       <tr>
+    <td>Spock (Star Trek)</td>
+    <td>S</td>
+    <td>$1,235</td>
+  </tr>
+  
+</table>
+<style>
+-
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="alice-in-wonderland-872612_1280.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="book-fair-678264_1280.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="devils-570861_1280.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="spiderman-in-nature-2-1258899-640x480.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="we-re-rabbits-1439192-1279x850.jpg" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <p>↦ Please feel free to contact us for custom made costumes we will be more than happy to assist you.</p>
+	<div id="footer">
+			<p>
+				© jc477161</a>
+			</p>
+		</div>
+	
+	
+</body>
+</html>
